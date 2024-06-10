@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/editSearch"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="상품명을 입력하세요"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/beige1"
+        android:textColor="#232323"
+        android:textSize="20dp"
+        android:id="@+id/btnInsert"
+        android:layout_width="93dp"
+        android:layout_height="51dp"
+        android:text="추가"
+        android:fontFamily="@font/nanumbarungothic"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="400dp"
+        android:layout_height="520dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textId"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:textColor="#232323"
+                        android:gravity="center"
+                        android:background="@color/beige3"
+                        android:fontFamily="@font/nanumbarungothic"
+                        android:text="코드"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textCategoty"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="분류"
+                        android:background="@color/beige3"
+                        android:gravity="center"
+                        android:textColor="#232323"
+                        android:fontFamily="@font/nanumbarungothic"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textName"
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:text="상품명"
+                        android:background="@color/beige3"
+                        android:gravity="center"
+                        android:textColor="#232323"
+                        android:fontFamily="@font/nanumbarungothic"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textPrice"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="가격"
+                        android:background="@color/beige3"
+                        android:gravity="center"
+                        android:textColor="#232323"
+                        android:fontFamily="@font/nanumbarungothic"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textAmount"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:text="수량"
+                        android:background="@color/beige3"
+                        android:gravity="center"
+                        android:textColor="#232323"
+                        android:fontFamily="@font/nanumbarungothic"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textDate"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:background="@color/beige3"
+                        android:fontFamily="@font/nanumbarungothic"
+                        android:gravity="center"
+                        android:text="구입일"
+                        android:textAlignment="center"
+                        android:textColor="#232323"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

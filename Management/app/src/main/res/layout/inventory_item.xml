@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true">
+
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/check_box"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/txtProduct_id"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textSize="16dp"
+        android:background="@color/beige4"
+        android:textColor="#232323"
+        android:gravity="center"
+        android:fontFamily="@font/nanumbarungothic"
+        android:text="TextView"
+        android:textAlignment="center"
+         />
+
+        <TextView
+            android:id="@+id/txtProduct_category"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="16dp"
+            android:text="TextView"
+            android:gravity="center"
+            android:textColor="#232323"
+            android:background="@color/beige4"
+            android:fontFamily="@font/nanumbarungothic"
+            android:textAlignment="center"
+             />
+
+        <TextView
+            android:id="@+id/txtProduct_name"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="#232323"
+            android:text="TextView"
+            android:background="@color/beige4"
+            android:fontFamily="@font/nanumbarungothic"
+            android:textAlignment="center"
+             />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="TextView"
+            android:textColor="#232323"
+            android:background="@color/beige4"
+            android:fontFamily="@font/nanumbarungothic"
+            android:textAlignment="center"
+             />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:textSize="16dp"
+            android:text="TextView"
+            android:background="@color/beige4"
+            android:textColor="#232323"
+            android:fontFamily="@font/nanumbarungothic"
+            android:textAlignment="center"
+             />
+
+    <TextView
+        android:id="@+id/txtPurchase_date"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:background="@color/beige4"
+        android:fontFamily="@font/nanumbarungothic"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#232323"
+        android:textSize="16dp" />
+
+</LinearLayout>

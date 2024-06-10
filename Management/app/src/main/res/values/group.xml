@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group">
+        <item>coffee</item>
+        <item>beverage</item>
+        <item>tea</item>
+        <item>food</item>
+        <item>분류</item>
+    </string-array>
+</resources>
