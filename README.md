@@ -5,7 +5,7 @@
 
 * * *
 
-## 프로젝트 개요
+## 1. 프로젝트 개요
 ### 기간
 2023.12.18 ~ 2024.1.10 (약 4주)
 - 1주차: 프로젝트 기획 및 화면 설계. DB 구축. 파트별 레이아웃 및 핵심 기능 설계.
@@ -27,9 +27,14 @@
 ### 사용 기술 및 팀 구성
 
 **[사용 기술 및 개발 환경]**
-- OS : Window, Android
+- OS : Windows11, Android
 - Language : JAVA
 - DB : SQLite
-- Tools : Android Studio, SQLite expert personal, DB Browser for SQLite, Cmd
+- Tools : Android Studio
 - Test device : Emulator (Pixel XL API 34)
+
+* * *
+
+## 2. 프로그램 구조
+
 
